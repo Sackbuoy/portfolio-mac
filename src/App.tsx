@@ -24,6 +24,7 @@ function App(): React.ReactElement {
     emailjsServiceId: "",
     emailjsTemplateId: "",
     emailjsPublicId: "",
+    scaleFactor: 6,
   });
 
   const [loading, setLoading] = useState<boolean>(true);

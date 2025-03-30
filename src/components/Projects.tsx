@@ -102,12 +102,9 @@ const Projects = ({config}: ProjectsProps): React.ReactElement => {
       ) : (
         <div className="dynamic-image-grid">
           {images.map((image) => {
-            // Scale factor - higher values make images smaller
-            const scaleFactor = 3;
-            
             // Calculate grid span based on aspect ratio and dimensions with scaling
-            const rowSpan = Math.max(1, Math.ceil(image.height / (50 * scaleFactor)));
-            const colSpan = Math.max(1, Math.ceil(image.width / (100 * scaleFactor)));
+            const rowSpan = Math.max(1, Math.ceil(image.height / (50 * config.scaleFactor)));
+            const colSpan = Math.max(1, Math.ceil(image.width / (100 * config.scaleFactor)));
             
             return (
               <div 

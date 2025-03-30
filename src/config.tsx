@@ -18,5 +18,6 @@ export interface ConfigData {
   emailjsServiceId: string;
   emailjsTemplateId: string;
   emailjsPublicId: string;
+  scaleFactor: number;
 }
 
